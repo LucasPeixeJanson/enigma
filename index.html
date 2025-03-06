@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Diário</title>
+    <title>Enigma</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Desafio do Dia</h1>
-        <p id="enigma">Carregando o enigma...</p>
+        <h1>Desvende o Mistério</h1>
+        <div id="progresso">
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+            <span class="letra">_</span>
+        </div>
+        <p id="pergunta">Carregando enigma...</p>
         <input type="text" id="resposta" placeholder="Digite sua resposta">
-        <button onclick="verificarResposta()">Enviar</button>
+        <button onclick="verificarResposta()">Responder</button>
         <p id="feedback"></p>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
