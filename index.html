@@ -58,7 +58,7 @@
         <span class="heart heart3">❤</span>
         <span class="heart heart4">❤</span>
         <h1>Desvende o Mistério do Amor</h1>
-        <div id="progresso">_ _ _ _ _ _ _ _ _ _ _ _ _</div>
+        <div id="progresso">_ _ _ _   _ _ _ _ _ _ _   _ _ _</div>
         <p id="pergunta">Carregando enigma...</p>
         <input type="text" id="resposta" placeholder="Digite sua resposta">
         <button onclick="verificarResposta()">Responder</button>
@@ -66,8 +66,8 @@
     </div>
     
     <script>
-        const respostasCorretas = ["Rua", "Itapeva", "636", "Bela", "Vista"];
-        const endereco = "Rua Itapeva 636".split("");
+        const respostasCorretas = ["Rua", "Itapeva", "636"];
+        const endereco = ["R", "u", "a", " ", "I", "t", "a", "p", "e", "v", "a", " ", "6", "3", "6"];
         let letrasReveladas = Array(endereco.length).fill("_");
         let tentativasPorDia = 2;
         let respostasDadas = 0;
@@ -80,11 +80,11 @@
             let resposta = document.getElementById("resposta").value.trim();
             if (respostasCorretas.includes(resposta)) {
                 if (resposta === "636") {
-                    for (let i = 9; i < endereco.length; i++) {
+                    for (let i = 12; i < endereco.length; i++) {
                         letrasReveladas[i] = endereco[i];
                     }
                 } else {
-                    let indicesDisponiveis = endereco.map((letra, i) => letrasReveladas[i] === "_" ? i : null).filter(i => i !== null);
+                    let indicesDisponiveis = endereco.map((letra, i) => letrasReveladas[i] === "_" && letra !== " " ? i : null).filter(i => i !== null);
                     if (indicesDisponiveis.length > 0) {
                         let indiceAleatorio = indicesDisponiveis[Math.floor(Math.random() * indicesDisponiveis.length)];
                         letrasReveladas[indiceAleatorio] = endereco[indiceAleatorio];
@@ -99,11 +99,12 @@
         }
         
         function atualizarProgresso() {
-            document.getElementById("progresso").textContent = letrasReveladas.join(" ");
+            document.getElementById("progresso").textContent = letrasReveladas.join("");
         }
         
         atualizarProgresso();
     </script>
 </body>
 </html>
+
 
