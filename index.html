@@ -30,5 +30,51 @@
         <button onclick="verificarResposta()">Responder</button>
         <p id="feedback"></p>
     </div>
+    
+    <script>
+        const respostasCorretas = [
+            "Rua", "Itapeva", "636", "Bela", "Vista"
+        ];
+        const endereco = "Rua Itapeva 636".split("");
+        let letrasReveladas = Array(endereco.length).fill("_");
+        let tentativasPorDia = 2;
+        let respostasDadas = 0;
+        
+        function verificarResposta() {
+            if (respostasDadas >= tentativasPorDia) {
+                document.getElementById("feedback").textContent = "Você já respondeu duas vezes hoje. Tente amanhã!";
+                return;
+            }
+            
+            let resposta = document.getElementById("resposta").value.trim();
+            if (respostasCorretas.includes(resposta)) {
+                if (resposta === "636") {
+                    for (let i = 9; i < endereco.length; i++) {
+                        letrasReveladas[i] = endereco[i];
+                    }
+                } else {
+                    let indicesDisponiveis = endereco.map((letra, i) => letrasReveladas[i] === "_" ? i : null).filter(i => i !== null);
+                    if (indicesDisponiveis.length > 0) {
+                        let indiceAleatorio = indicesDisponiveis[Math.floor(Math.random() * indicesDisponiveis.length)];
+                        letrasReveladas[indiceAleatorio] = endereco[indiceAleatorio];
+                    }
+                }
+                atualizarProgresso();
+                document.getElementById("feedback").textContent = "Correto! Letra revelada.";
+            } else {
+                document.getElementById("feedback").textContent = "Resposta incorreta. Tente novamente!";
+            }
+            respostasDadas++;
+        }
+        
+        function atualizarProgresso() {
+            let elementos = document.querySelectorAll("#progresso .letra");
+            elementos.forEach((el, i) => {
+                el.textContent = letrasReveladas[i];
+            });
+        }
+        
+        atualizarProgresso();
+    </script>
 </body>
 </html>
