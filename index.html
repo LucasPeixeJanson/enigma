@@ -3,38 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enigma</title>
+    <title>Enigma do Amor</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <style>
+        body {
+            background-color: #ffb6c1;
+            font-family: "Lobster", cursive, sans-serif;
+            text-align: center;
+        }
         .container {
             background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            max-width: 600px;
+            padding: 50px;
+            border-radius: 15px;
+            max-width: 700px;
             margin: 50px auto;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        h1 {
+            color: #d63384;
+        }
+        .heart {
+            color: red;
+            font-size: 30px;
+            position: absolute;
+        }
+        .heart1 { top: -20px; left: 20px; }
+        .heart2 { top: -20px; right: 20px; }
+        .heart3 { bottom: -20px; left: 20px; }
+        .heart4 { bottom: -20px; right: 20px; }
+        #progresso {
+            font-size: 24px;
+            margin: 20px 0;
+            letter-spacing: 5px;
+        }
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c2185b;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Desvende o Mistério</h1>
-        <div id="progresso">
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-            <span class="letra">_</span>
-        </div>
+        <span class="heart heart1">❤</span>
+        <span class="heart heart2">❤</span>
+        <span class="heart heart3">❤</span>
+        <span class="heart heart4">❤</span>
+        <h1>Desvende o Mistério do Amor</h1>
+        <div id="progresso">_ _ _ _ _ _ _ _ _ _ _ _ _</div>
         <p id="pergunta">Carregando enigma...</p>
         <input type="text" id="resposta" placeholder="Digite sua resposta">
         <button onclick="verificarResposta()">Responder</button>
@@ -42,9 +66,7 @@
     </div>
     
     <script>
-        const respostasCorretas = [
-            "Rua", "Itapeva", "636", "Bela", "Vista"
-        ];
+        const respostasCorretas = ["Rua", "Itapeva", "636", "Bela", "Vista"];
         const endereco = "Rua Itapeva 636".split("");
         let letrasReveladas = Array(endereco.length).fill("_");
         let tentativasPorDia = 2;
@@ -55,7 +77,6 @@
                 document.getElementById("feedback").textContent = "Você já respondeu duas vezes hoje. Tente amanhã!";
                 return;
             }
-            
             let resposta = document.getElementById("resposta").value.trim();
             if (respostasCorretas.includes(resposta)) {
                 if (resposta === "636") {
@@ -78,10 +99,7 @@
         }
         
         function atualizarProgresso() {
-            let elementos = document.querySelectorAll("#progresso .letra");
-            elementos.forEach((el, i) => {
-                el.textContent = letrasReveladas[i];
-            });
+            document.getElementById("progresso").textContent = letrasReveladas.join(" ");
         }
         
         atualizarProgresso();
