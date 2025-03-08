@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enigma do Amor</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
     <style>
         body {
             background-color: #ffb6c1;
             font-family: "Lobster", cursive, sans-serif;
             text-align: center;
         }
+
         .container {
             background-color: white;
             padding: 50px;
@@ -21,23 +22,43 @@
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
             position: relative;
         }
+
         h1 {
             color: #d63384;
         }
+
         .heart {
             color: red;
             font-size: 30px;
             position: absolute;
         }
-        .heart1 { top: -20px; left: 20px; }
-        .heart2 { top: -20px; right: 20px; }
-        .heart3 { bottom: -20px; left: 20px; }
-        .heart4 { bottom: -20px; right: 20px; }
+
+        .heart1 {
+            top: -20px;
+            left: 20px;
+        }
+
+        .heart2 {
+            top: -20px;
+            right: 20px;
+        }
+
+        .heart3 {
+            bottom: -20px;
+            left: 20px;
+        }
+
+        .heart4 {
+            bottom: -20px;
+            right: 20px;
+        }
+
         #progresso {
             font-size: 24px;
             margin: 20px 0;
             letter-spacing: 5px;
         }
+
         button {
             background-color: #d63384;
             color: white;
@@ -46,11 +67,18 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #c2185b;
         }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <span class="heart heart1">❤</span>
@@ -58,53 +86,30 @@
         <span class="heart heart3">❤</span>
         <span class="heart heart4">❤</span>
         <h1>Desvende o Mistério do Amor</h1>
-        <div id="progresso">_ _ _ _   _ _ _ _ _ _ _   _ _ _</div>
-        <p id="pergunta">Carregando enigma...</p>
+        <div id="progresso">
+            <span id="letra0">_</span>
+            <span id="letra1">_</span>
+            <span id="letra2">_</span>
+            &nbsp;
+            <span id="letra3">_</span>
+            <span id="letra4">_</span>
+            <span id="letra5">_</span>
+            <span id="letra6">_</span>
+            <span id="letra7">_</span>
+            <span id="letra8">_</span>
+            <span id="letra9">_</span>
+            &nbsp;
+            <span id="letra10">_</span>
+            <span id="letra11">_</span>
+            <span id="letra12">_</span>
+        </div>
+        <p id="enigma">Carregando enigma...</p>
         <input type="text" id="resposta" placeholder="Digite sua resposta">
-        <button onclick="verificarResposta()">Responder</button>
+        <button id="verificar">Responder</button>
         <p id="feedback"></p>
     </div>
-    
-    <script>
-        const respostasCorretas = ["Rua", "Itapeva", "636"];
-        const endereco = ["R", "u", "a", " ", "I", "t", "a", "p", "e", "v", "a", " ", "6", "3", "6"];
-        let letrasReveladas = Array(endereco.length).fill("_");
-        let tentativasPorDia = 2;
-        let respostasDadas = 0;
-        
-        function verificarResposta() {
-            if (respostasDadas >= tentativasPorDia) {
-                document.getElementById("feedback").textContent = "Você já respondeu duas vezes hoje. Tente amanhã!";
-                return;
-            }
-            let resposta = document.getElementById("resposta").value.trim();
-            if (respostasCorretas.includes(resposta)) {
-                if (resposta === "636") {
-                    for (let i = 12; i < endereco.length; i++) {
-                        letrasReveladas[i] = endereco[i];
-                    }
-                } else {
-                    let indicesDisponiveis = endereco.map((letra, i) => letrasReveladas[i] === "_" && letra !== " " ? i : null).filter(i => i !== null);
-                    if (indicesDisponiveis.length > 0) {
-                        let indiceAleatorio = indicesDisponiveis[Math.floor(Math.random() * indicesDisponiveis.length)];
-                        letrasReveladas[indiceAleatorio] = endereco[indiceAleatorio];
-                    }
-                }
-                atualizarProgresso();
-                document.getElementById("feedback").textContent = "Correto! Letra revelada.";
-            } else {
-                document.getElementById("feedback").textContent = "Resposta incorreta. Tente novamente!";
-            }
-            respostasDadas++;
-        }
-        
-        function atualizarProgresso() {
-            document.getElementById("progresso").textContent = letrasReveladas.join("");
-        }
-        
-        atualizarProgresso();
-    </script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
