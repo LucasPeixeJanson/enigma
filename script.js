@@ -11,7 +11,7 @@ const enigmas = [
     { pergunta: "O que tem mãos, mas não pode bater palmas?", resposta: "relógio" }
 ];
 
-const dataInicio = new Date("2025-03-06");
+const dataInicio = new Date("2025-03-08");
 const hoje = new Date();
 const diferencaDias = Math.floor((hoje - dataInicio) / (1000 * 60 * 60 * 24));
 
