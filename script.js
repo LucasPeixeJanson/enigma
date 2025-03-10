@@ -1,7 +1,7 @@
 const enigmas = {
     0: [
         { pergunta: "Qual é o nome completo do irmão de Dumbledore?", resposta: "1" },
-        { pergunta: "Qual o nome do dragão que se recusa a aceitar um novo cavaleiro após a morte de seu antigo parceiro?", resposta: "Tairn" },
+        { pergunta: "Qual o nome do dragão que se recusa a aceitar um novo cavaleiro após a morte de seu antigo parceiro?", resposta: "tairn" },
     ],
     1: [
         { pergunta: "Qual a sigla da proteína responsável pela contração muscular no coração?", resposta: "Troponina C" },
