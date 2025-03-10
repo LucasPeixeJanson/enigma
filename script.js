@@ -1,23 +1,23 @@
 const enigmas = {
     0: [
-        { pergunta: "Qual é o nome completo do irmão de Dumbledore?", resposta: "1" },
+        { pergunta: "Qual a sigla da proteína responsável pela contração muscular no coração?", resposta: "troponina c" },
         { pergunta: "Qual o nome do dragão que se recusa a aceitar um novo cavaleiro após a morte de seu antigo parceiro?", resposta: "tairn" },
     ],
     1: [
-        { pergunta: "Qual a sigla da proteína responsável pela contração muscular no coração?", resposta: "Troponina C" },
-        { pergunta: "Qual era o nome do macaco de estimação de Ross?", resposta: "Marcel" },
+        { pergunta: "Qual é o nome completo do irmão de Dumbledore?", resposta: "aberforth dumbledore" },
+        { pergunta: "Qual era o nome do macaco de estimação de Ross?", resposta: "marcel" },
     ],
     2: [
-        { pergunta: "No livro Enigma do Príncipe, qual é o primeiro feitiço não verbal que Harry consegue realizar com sucesso?", resposta: "Levicorpus" },
-        { pergunta: "Qual o nome do dragão de Andarna antes de ela mudar de cor?", resposta: "Escama de Prata" },
+        { pergunta: "No livro Enigma do Príncipe, qual é o primeiro feitiço não verbal que Harry consegue realizar com sucesso?", resposta: "levicorpus" },
+        { pergunta: "Qual o nome do dragão de Andarna antes de ela mudar de cor?", resposta: "escama de prata" },
     ],
     3: [
-        { pergunta: "Qual o nome do pato e do pintinho que Joey e Chandler adotam??", resposta: "Duck e Chick" },
-        { pergunta: "Qual a principal enzima inibida pelos anti-inflamatórios não esteroides (AINEs)?", resposta: "Ciclooxigenase" },
+        { pergunta: "Qual o nome do pato e do pintinho que Joey e Chandler adotam??", resposta: "duck e chick" },
+        { pergunta: "Qual a principal enzima inibida pelos anti-inflamatórios não esteroides (AINEs)?", resposta: "ciclooxigenase" },
     ],
     4: [
-        { pergunta: "Qual é o nome do local onde os Feéricos mantêm seus arquivos secretos sobre os Wyvern?", resposta: "Biblioteca Sombria" },
-        { pergunta: "Qual é a senha que Dumbledore usa para entrar em seu escritório no terceiro ano de Harry?", resposta: "Sorvete de Limão" },
+        { pergunta: "Qual é o nome do local onde os Feéricos mantêm seus arquivos secretos sobre os Wyvern?", resposta: "biblioteca sombria" },
+        { pergunta: "Qual é a senha que Dumbledore usa para entrar em seu escritório no terceiro ano de Harry?", resposta: "sorvete de limão" },
     ],
     5: [
         { pergunta: "Thinas?", resposta: "thinas" },
