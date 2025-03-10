@@ -1,23 +1,23 @@
 const enigmas = {
     0: [
-        { pergunta: "O que sempre sobe, mas nunca desce?", resposta: "idade" },
-        { pergunta: "Tenho cidades, mas não casas. Tenho montanhas, mas não árvores. Quem sou eu?", resposta: "mapa" },
+        { pergunta: "Qual é o nome completo do irmão de Dumbledore?", resposta: "Aberforth Dumbledore" },
+        { pergunta: "Qual o nome do dragão que se recusa a aceitar um novo cavaleiro após a morte de seu antigo parceiro?", resposta: "Tairn" },
     ],
     1: [
-        { pergunta: "Quanto mais você tira, maior eu fico. O que sou?", resposta: "buraco" },
-        { pergunta: "O que pode encher uma sala, mas não ocupa espaço?", resposta: "luz" },
+        { pergunta: "Qual a sigla da proteína responsável pela contração muscular no coração?", resposta: "Troponina C" },
+        { pergunta: "Qual era o nome do macaco de estimação de Ross?", resposta: "Marcel" },
     ],
     2: [
-        { pergunta: "O que tem chaves, mas não abre portas?", resposta: "piano" },
-        { pergunta: "Sou alto quando sou jovem e baixo quando sou velho. Quem sou eu?", resposta: "vela" },
+        { pergunta: "No livro Enigma do Príncipe, qual é o primeiro feitiço não verbal que Harry consegue realizar com sucesso?", resposta: "Levicorpus" },
+        { pergunta: "Qual o nome do dragão de Andarna antes de ela mudar de cor?", resposta: "Escama de Prata" },
     ],
     3: [
-        { pergunta: "O que tem um pescoço, mas não tem cabeça?", resposta: "garrafa" },
-        { pergunta: "O que pode viajar pelo mundo enquanto fica no mesmo lugar?", resposta: "selo" },
+        { pergunta: "Qual o nome do pato e do pintinho que Joey e Chandler adotam??", resposta: "Duck e Chick" },
+        { pergunta: "Qual a principal enzima inibida pelos anti-inflamatórios não esteroides (AINEs)?", resposta: "Ciclooxigenase" },
     ],
     4: [
-        { pergunta: "O que pode ser quebrado sem ser tocado?", resposta: "promessa" },
-        { pergunta: "O que tem mãos, mas não pode bater palmas?", resposta: "relógio" },
+        { pergunta: "Qual é o nome do local onde os Feéricos mantêm seus arquivos secretos sobre os Wyvern?", resposta: "Biblioteca Sombria" },
+        { pergunta: "Qual é a senha que Dumbledore usa para entrar em seu escritório no terceiro ano de Harry?", resposta: "Sorvete de Limão" },
     ],
     5: [
         { pergunta: "Thinas?", resposta: "thinas" },
