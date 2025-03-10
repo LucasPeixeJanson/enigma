@@ -1,6 +1,6 @@
 const enigmas = {
     0: [
-        { pergunta: "Qual é o nome completo do irmão de Dumbledore?", resposta: "Aberforth Dumbledore" },
+        { pergunta: "Qual é o nome completo do irmão de Dumbledore?", resposta: "1" },
         { pergunta: "Qual o nome do dragão que se recusa a aceitar um novo cavaleiro após a morte de seu antigo parceiro?", resposta: "Tairn" },
     ],
     1: [
