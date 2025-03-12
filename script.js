@@ -9,7 +9,7 @@ const enigmas = {
     ],
     2: [
         { pergunta: "No livro Enigma do Príncipe, qual é o primeiro feitiço não verbal que Harry consegue realizar com sucesso?", resposta: "levicorpus" },
-        { pergunta: "Qual o nome do dragão de Andarna antes de ela mudar de cor?", resposta: "escama de prata" },
+        { pergunta: "Qual o nome da doença genética que Violet acredita ter herdado da mãe?", resposta: "Ehlers-Danlos" },
     ],
     3: [
         { pergunta: "Qual o nome do pato e do pintinho que Joey e Chandler adotam??", resposta: "duck e chick" },
