@@ -8,7 +8,7 @@ const enigmas = {
         { pergunta: "Qual era o nome do macaco de estimação de Ross?", resposta: "marcel" },
     ],
     2: [
-        { pergunta: "No livro Enigma do Príncipe, qual é o primeiro feitiço não verbal que Harry consegue realizar com sucesso?", resposta: "levicorpus" },
+        { pergunta: "Qual é a senha que Dumbledore usa para entrar em seu escritório no terceiro ano de Harry?", resposta: "sorvete de limão" },
         { pergunta: "Qual o nome da doença genética que Violet acredita ter herdado da mãe?", resposta: "Ehlers-Danlos" },
     ],
     3: [
@@ -17,7 +17,7 @@ const enigmas = {
     ],
     4: [
         { pergunta: "Qual é o nome do local onde os Feéricos mantêm seus arquivos secretos sobre os Wyvern?", resposta: "biblioteca sombria" },
-        { pergunta: "Qual é a senha que Dumbledore usa para entrar em seu escritório no terceiro ano de Harry?", resposta: "sorvete de limão" },
+        { pergunta: "No livro Enigma do Príncipe, qual é o primeiro feitiço não verbal que Harry consegue realizar com sucesso?", resposta: "levicorpus" },
     ],
     5: [
         { pergunta: "Thinas?", resposta: "thinas" },
