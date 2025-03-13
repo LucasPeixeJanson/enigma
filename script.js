@@ -9,7 +9,7 @@ const enigmas = {
     ],
     2: [
         { pergunta: "Qual é a senha que Dumbledore usa para entrar em seu escritório no terceiro ano de Harry?", resposta: "sorvete de limão" },
-        { pergunta: "Qual o nome da doença genética que Violet acredita ter herdado da mãe?", resposta: "ehlers danlos" },
+        { pergunta: "Qual o nome  da doença genética que Violet acredita ter herdado da mãe?", resposta: "ehlers danlos" },
     ],
     3: [
         { pergunta: "Qual o nome do pato e do pintinho que Joey e Chandler adotam??", resposta: "duck e chick" },
