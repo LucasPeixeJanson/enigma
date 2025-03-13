@@ -12,7 +12,7 @@ const enigmas = {
         { pergunta: "Qual o nome do pato e do pintinho que Joey e Chandler adotam??", resposta: "duck e chick" },
     ],
     3: [
-        { pergunta: "Qual é o nome do local onde os Feéricos mantêm seus arquivos secretos sobre os Wyvern?", resposta: "biblioteca sombria" },
+        { pergunta: "Durante a viagem para Londres, Chandler e Joey brigam porque um deles não quer parar para ver um monumento. Qual era o monumento?", resposta: "big ben" },
         { pergunta: "Qual a principal enzima inibida pelos anti-inflamatórios não esteroides (AINEs)?", resposta: "ciclooxigenase" },
     ],
     4: [
