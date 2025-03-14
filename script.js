@@ -16,11 +16,11 @@ const enigmas = {
         { pergunta: "Qual a principal enzima inibida pelos anti-inflamatórios não esteroides (AINEs)?", resposta: "ciclooxigenase" },
     ],
     4: [
-        { pergunta: "No livro Enigma do Príncipe, qual é o primeiro feitiço não verbal que Harry consegue realizar com sucesso?", resposta: "levicorpus" },
-        { pergunta: "Qual o nome  da doença genética que Violet acredita ter herdado da mãe?", resposta: "ehlers danlos" },
+        { pergunta: "Como é chamado o processo de morte celular programada?", resposta: "apoptose" },
+        { pergunta: "Qual é o nome do programa de perguntas que Joey participa?", resposta: "bamboozled" },
     ],
     5: [
-        { pergunta: "Thinas?", resposta: "thinas" },
+        { pergunta: "Qual é o nome da única bruxa conhecida que se tornou um fantasma após sua morte? - Qual é o nome do fenômeno em que o coração pode continuar batendo por alguns segundos após ser retirado do corpo?  -  Qual é o nome da boneca que Joey guarda com carinho e que Chandler tenta jogar fora?", resposta: "helena revenclaw, automatismo cardiaco, hugsy" },
     ]
 };
 
